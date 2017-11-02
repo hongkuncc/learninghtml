@@ -9,10 +9,9 @@
 		ul.b {list-style-type:square;}
 		ol.c {list-style-type:upper-roman;}
 		ol.d {list-style-type:lower-alpha;}
-	    ul{list-style-image: url('zh.jpg');}
 		table,th,td
 		{
-			border:1px solid black;
+			border:1px solid green;
 		}
 		table
 		{
@@ -20,12 +19,41 @@
 		}
 		th
 		{
+			background-color:green;
+            color:white;
 			height:50px;
+		}
+		td
+		{
+		text-align:right;
+		background-color:red;
+		}
+		div.ex
+		{
+		 width:1050px;
+		 padding:10px;
+		 border:5px solid gray;
+		 margin:0px;
+		}
+		p.hh
+		{
+		text-align:center;
+		border-style:ridge;
+		border-color:red;
+		}
+		p:first-line
+		{
+		color:#ff00ff;
+		font-variant:small-caps;
 		}
 	</style>	
 	</head>
 
 	<body>
+	<img src="DSC05362-3曝光正常.jpg" width="1080"height="720"><br>
+	<p class="hh">明珠楼</p>
+	<div class="ex">跟上面图的宽度一样</div>
+	<p>这是css伪元素</p>
 	<p>这是无序列表:</p>
 		<ul class="a">
 		  <li>Coffee</li>
