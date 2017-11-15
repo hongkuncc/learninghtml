@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>jquery学习</title> 
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script>
+		$(document).ready(function(){
+		  $("#p1").mouseleave(function(){
+			alert("你的鼠标离开了该段落");
+		  });
+		
+		$("#p3").mousedown(function(){
+            alert("你的鼠标在这个段落下!");
+         }); 
+		  $("#p2").mouseup(function(){
+            alert("你的鼠标在这个段落上!");
+         }); 
+		 $("#p4").hover(function(){
+			alert("你的鼠标在这段上面!");
+			},
+			 function(){
+			 alert("拜拜！你现在离开了第四段!");
+			}); 
+			$("input").focus(function(){
+			 $(this).css("background-color","#cccccc");
+			}); 
+			
+		}); 
+		</script>
+		
+	</head>
+<body>
+
+	<p id="p1">这是一个段落。</p>
+	<p id="p2">当在元素上松开鼠标按钮时，会发生mouseup事件。</p>
+	<p id="p3">当在元素上松开鼠标按钮时，会发生mousedown事件。</p>
+	<p id="p4">这是第三个段落。</p>
+</body>
+</html>
